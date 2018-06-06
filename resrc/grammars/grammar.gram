@@ -1,0 +1,15 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar 
+ */
+
+grammar grammar;
+
+public <feelings>  = ( how are you | hello | introduce yourself | what you can do);
+public <number> = ( zero | one | two | three | four );                   
+public <types> = ( string | integer | boolean | float | double );
+public <basics> = ( switch case | create table | initialize table by <number>{1} | console entry );
+public <Git> = ( git push ); 
+public <Network> = (create server | create Client |  port number is | server | client );
+public <shortcut> = ( tokenizer | keyboard entry | output file | input file );
