@@ -12,7 +12,7 @@ public class WorkingFile {
 	static private String SrcPath = "/home/ghada/eclipse-workspace/Test/src/Main.java";
 	private String workingDirectory = null;
 	private static int endLine = 3;
-	private static int numberTab =0;
+	private static int numberTab = 0;
 	private static boolean oneTimeKeyboardEntry = true;
 	private static int lastTableindex;
 
@@ -72,34 +72,33 @@ public class WorkingFile {
 				lastTableindex = endLine;
 				endLine += 1;
 			} else if (content.contains("TableInitialization")) {
-				
+
 				// pardefaut taille 3 à gerer
 				if (content.endsWith("Zero"))
 					snippetOfCode = "tab" + (numberTab - 1) + "= new int[] {0,0,0};";
 				else if (content.endsWith("Two"))
 					snippetOfCode = "tab" + (numberTab - 1) + "= new int[] {2,2,2};";
 
-				lines.add(lastTableindex+1, snippetOfCode);
+				lines.add(lastTableindex + 1, snippetOfCode);
 				Files.write(path, lines, StandardCharsets.UTF_8);
 				endLine += 1;
-			
-			}
-			else if (content.equals("KeyboardEntry") && oneTimeKeyboardEntry) {
+
+			} else if (content.equals("KeyboardEntry") && oneTimeKeyboardEntry) {
 				// exist one time in a file
 				oneTimeKeyboardEntry = false;
-				//add import java.util.Scanner;
+				// add import java.util.Scanner;
 				snippetOfCode = "import java.util.Scanner;";
 				lines.add(0, snippetOfCode);
 				Files.write(path, lines, StandardCharsets.UTF_8);
-				endLine+=1;
-				lastTableindex+=1;
-				
+				endLine += 1;
+				lastTableindex += 1;
+
 				snippetOfCode = "Scanner sc = new Scanner(System.in);\n String input = sc.nextLine();";
 				lines.add(endLine, snippetOfCode);
 				Files.write(path, lines, StandardCharsets.UTF_8);
-				endLine +=2;
+				endLine += 2;
 			}
-			System.out.println("endline"+endLine);
+			System.out.println("Line " + endLine);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -11,24 +11,15 @@ public class Main {
 
 		// lunch speech recognizer
 		SpeechRecognizer speechRecognizer = new SpeechRecognizer();
-		//speechRecognizer.checkResources();
+		// speechRecognizer.checkResources();
 		speechRecognizer.listenAndReact();
 
 		// get working directory
 		String workingDir = System.getProperty("user.dir");
 		System.out.println("Current working directory : " + workingDir);
-//		// file test
-//		WorkingFile file = new WorkingFile();
-//		file.setWorkingDirectory(workingDir);
+		// // file test
+		// WorkingFile file = new WorkingFile();
+		// file.setWorkingDirectory(workingDir);
 
-		// input
-		// Scanner scanner=new Scanner(System.in);
-		// System.out.println("enter the abs file path");
-		// String input = scanner.nextLine();
-		// file.setSrcPath(input);
-		// file.setEndLine(3);
-		// System.out.println("You entered : " + file.getSrcPath());
-		// WorkingFile.writeFile("TableCreation", -1);
-		// WorkingFile.writeFile("TableCreation", -1);
 	}
 }
