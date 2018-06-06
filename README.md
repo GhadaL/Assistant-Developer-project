@@ -37,6 +37,12 @@ static private String SrcPath = "/home/ghada/eclipse-workspace/Test/src/Main.jav
 * Mary TTS 5.2 
 
 
+## Next Steps
+
+* add Git command actions
+* Having the pessobility to delete and choose a line to write (by default it writes in order only for the initialisation of the table, it follows his definition)
+* write big code snippet from files librairy like TCP Client / server.
+
 ## Authors
 
 * **Louremi Ghada** 
