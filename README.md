@@ -6,24 +6,24 @@ Like doing git push or implementing a TCP Client.
 ## Area of Applications
 
 1- As a platform to learn algorithms fundamentals without being bored by staying on theoric aspects or wasting concentration on understanding the new programming language implementation.
-Since the implementation of voice command will be independent of programming language, the beginner can concentrate on the algorithmic aspects without being blocked to implement his simple idea in any language.
+Since the implementation of voice command will be independent of programming languages, the beginner can concentrate on the algorithmic aspects without being blocked to implement his simple idea in any language.
 
-2- As an assistant for developers to gain time to implement repeated snippet of code and uploading their code to the host server. in fact, having the ability to implement some code without the need of
+2- As an assistant for developers to gain time to implement repeated snippet of code and uploading their code to the host server. 
+In fact, having the ability to implement some code without fixing the work screen from time to time, allow developers to avoid many eye syndroms and 
+increase their productivity. 
  
 ### Demo
 
-Video Link : https://www.youtube.com/watch?v=445CpHiYpd0
-[![Assistant Developer](https://cdn3.iconfinder.com/data/icons/gray-toolbar-4/512/play_video-512.png)](https://www.youtube.com/watch?v=445CpHiYpd0)
+Only the examples showed in the Demo are working at this stage, this exmaples are just a start point.
 
-```
-Give examples
-```
+[![Assistant Developer](https://small-bizsense.com/wp-content/uploads/2016/11/Video-Image.png)](https://www.youtube.com/watch?v=445CpHiYpd0)
+
 
 ### Installing
 
 - instal the project
 - add jars build path for the of lib repository
-- change the SrcPath in the "WorkingFile.jav" Class to the file you want to write in.
+- change the SrcPath in the "WorkingFile.java" Class to the file you want to write in.
 
 
 ```
@@ -35,6 +35,7 @@ static private String SrcPath = "/home/ghada/eclipse-workspace/Test/src/Main.jav
 * Java
 * Sphinx API 5 (https://cmusphinx.github.io/wiki/tutoriallm/)
 * Mary TTS 5.2 
+
 
 ## Authors
 
